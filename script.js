@@ -1,7 +1,6 @@
+document.getElementById("message").style.display = "none"
 document.getElementById("btn").addEventListener('click', e => {
     e.preventDefault()
-    document.getElementById("message").style.display = "none"
-    msg = document.getElementById("message").style.display
     nam = document.getElementById("name").value
     textarea = document.getElementById("textarea").value
     if (!nam || !textarea) {
