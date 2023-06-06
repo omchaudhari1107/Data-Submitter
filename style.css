@@ -41,6 +41,7 @@ body {
 }
 
 #name {
+     border: none;
     background-color: rgb(231, 231, 231);
     padding: 5px;
     height: 5%;
