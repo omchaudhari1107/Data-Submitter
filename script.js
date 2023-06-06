@@ -1,4 +1,3 @@
-document.getElementById("message").style.display = "none"
 document.getElementById("btn").addEventListener('click', e => {
     e.preventDefault()
     nam = document.getElementById("name").value
@@ -16,14 +15,7 @@ document.getElementById("btn").addEventListener('click', e => {
             method: 'POST',
             body: new FormData(form)
         }).then(
-            document.getElementById("message").style.display = "block",
-            document.getElementById("message").style.textAlign = "Center",
-            document.getElementById("message").style.margin = "10px",
-            document.getElementById("message").style.fontFamily = "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif",
-            document.getElementById("message").style.fontSize = "20px",
-            document.getElementById("message").style.fontWeight = "bold",
-            document.getElementById("message").style.color = "yellowgreen",
-
+           alert("Response Recorded")
         )
             .then(res => {
                 console.log(res)
